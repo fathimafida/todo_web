@@ -13,5 +13,6 @@ class TodoController extends Controller
         $todos = DB::select('SELECT * FROM todo');
         // dd($todos);
         return view('home', ['todos' => $todos]);
+        // or use compact['todos'] 
     }
 }
